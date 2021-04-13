@@ -12,6 +12,23 @@ $white: #ffff;
 $black: #000000;
 $burn: #BC8635;
 
+// Media queries and SCSS mixins, used for mobile and tablet
+// responsive design requirements
+$desktop: 1366px;
+$tablet: 768px;
+
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{tablet}) {
+    @content;
+  }
+}
+
 // Body styling to remove margins and padding
 body {
     margin: 0;
@@ -20,6 +37,9 @@ body {
 
 // Header stylings
 header {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 
     h1 {
         font-family: $abel;
@@ -40,40 +60,99 @@ header {
     top: 0;
     mix-blend-mode: darken;
     opacity: 0.4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
 
     img {
         width: 100%;
-        height: 50vh;
+        z-index: -1;
+        height: 80%;
     }
 
-    h1 {
+    h1:first-child {
         position: absolute;
-        
+        left: 15%;
+        color: $black;
     }
 
-    p {
+    h1:last-child {
         position: absolute;
-        left: 0;
-        top: 70%;
-    }
-
-    a {
-        position: absolute;
-        left: 0;
-        top: 85%;
+        color: $black;
     }
 }
 
-.home-main {
+main {
+    font-family: $aleo;
+    width: 100%;
+    background-color: $black;
+    color: $burn;
+    padding-top: 5%;
+    padding-bottom: 5%;
 
-    .home-main-content {
-        font-family: $aleo;
-        width: 100%;
-        background-color: $black;
-        color: $burn;
+    h1 {
+        text-align: center;
+    }
 
-        p {
-            text-align: center;
+    p {
+        text-align: center;
+    }
+}
+
+article {
+    font-family: $aleo;
+    width: 100%;
+    background-color: $black;
+    color: $burn;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+
+    .article-left {
+        width: 50%;
+    }
+
+    .article-right {
+        width: 50%;
+
+        img {
+            width: 100%;
+            height: 25vh;
         }
+    }
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: $black;
+    color: $burn;
+    font-family: $abel;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 45vh;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: $burn;
+    }
+
+    a:hover {
+        color: $white;
     }
 }

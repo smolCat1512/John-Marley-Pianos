@@ -4,6 +4,16 @@ body {
   padding: 0;
 }
 
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
 header h1 {
   font-family: "Abel", sans-serif;
 }
@@ -22,37 +32,105 @@ header .header-underline {
   top: 0;
   mix-blend-mode: darken;
   opacity: 0.4;
-}
-
-.home-banner img {
+  top: 0;
+  left: 0;
   width: 100%;
   height: 50vh;
 }
 
-.home-banner h1 {
-  position: absolute;
+.home-banner img {
+  width: 100%;
+  z-index: -1;
+  height: 80%;
 }
 
-.home-banner p {
+.home-banner h1:first-child {
   position: absolute;
-  left: 0;
-  top: 70%;
+  left: 15%;
+  color: #000000;
 }
 
-.home-banner a {
+.home-banner h1:last-child {
   position: absolute;
-  left: 0;
-  top: 85%;
+  color: #000000;
 }
 
-.home-main .home-main-content {
+main {
   font-family: "Aleo", serif;
   width: 100%;
   background-color: #000000;
   color: #BC8635;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.home-main .home-main-content p {
+main h1 {
   text-align: center;
+}
+
+main p {
+  text-align: center;
+}
+
+article {
+  font-family: "Aleo", serif;
+  width: 100%;
+  background-color: #000000;
+  color: #BC8635;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article .article-left {
+  width: 50%;
+}
+
+article .article-right {
+  width: 50%;
+}
+
+article .article-right img {
+  width: 100%;
+  height: 25vh;
+}
+
+footer {
+  background-color: #000000;
+  color: #BC8635;
+  font-family: "Abel", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  height: 45vh;
+}
+
+@media (max-width: 1366px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+footer a {
+  text-decoration: none;
+  color: #BC8635;
+}
+
+footer a:hover {
+  color: #ffff;
 }
 /*# sourceMappingURL=home.css.map */
