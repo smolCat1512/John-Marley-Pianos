@@ -5,6 +5,13 @@ body {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -27,9 +34,15 @@ header .header-underline {
   margin-top: 0;
 }
 
-.home-banner {
-  left: 0;
+.home-video {
+  width: 100%;
+  height: 400px;
   top: 0;
+  left: 0;
+  position: relative;
+}
+
+.home-banner {
   mix-blend-mode: darken;
   opacity: 0.4;
   top: 0;
@@ -95,6 +108,106 @@ article .article-right {
 article .article-right img {
   width: 100%;
   height: 25vh;
+}
+
+.featured {
+  background-color: #ffff;
+}
+
+.featured h2 {
+  color: #BC8635;
+  font-family: "Aleo", serif;
+}
+
+.featured img {
+  width: 100%;
+}
+
+.who-are-we {
+  font-family: "Aleo", serif;
+  color: #BC8635;
+  background-color: #000000;
+}
+
+.who-are-we img {
+  width: 100%;
+  height: 300px;
+}
+
+.why-choose-us {
+  font-family: "Aleo", serif;
+  color: #BC8635;
+  margin-bottom: 10px;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  grid-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-areas: ". a ." "b . c" ". d ." "e . f" ". g .";
+}
+
+@media (max-width: 414px) {
+  .why-choose-us {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-rows: auto;
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
+        grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+  }
+}
+
+.why-choose-us a {
+  border: 2px solid #BC8635;
+  text-decoration: none;
+  color: #BC8635;
+  text-align: center;
+}
+
+.a {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: a;
+}
+
+.b {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: b;
+}
+
+.c {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: c;
+}
+
+.d {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: d;
+}
+
+.e {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: e;
+}
+
+.f {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: f;
+}
+
+.g {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: g;
 }
 
 footer {
