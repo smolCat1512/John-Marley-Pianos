@@ -253,6 +253,17 @@ article p {
 
 .featured {
   background-color: #ffff;
+  text-align: center;
+}
+
+@media (min-width: 1366px) {
+  .featured {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "h h h h" "i j k l";
+    grid-gap: 1em;
+    padding-bottom: 5%;
+  }
 }
 
 .featured h2 {
@@ -260,8 +271,34 @@ article p {
   font-family: "Aleo", serif;
 }
 
+@media (min-width: 1366px) {
+  .featured h2 {
+    font-size: 42px;
+  }
+}
+
 .featured img {
   width: 100%;
+}
+
+.featured1 {
+  grid-area: h;
+}
+
+.featured2 {
+  grid-area: i;
+}
+
+.featured3 {
+  grid-area: j;
+}
+
+.featured3 {
+  grid-area: k;
+}
+
+.featured3 {
+  grid-area: l;
 }
 
 .who-are-we {
@@ -361,7 +398,7 @@ footer {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  height: 45vh;
+  height: 50vh;
 }
 
 @media (min-width: 1366px) {
@@ -376,6 +413,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 30vh;
   }
 }
 
@@ -386,5 +424,12 @@ footer a {
 
 footer a:hover {
   color: #ffff;
+}
+
+footer form {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=home.css.map */

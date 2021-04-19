@@ -258,10 +258,23 @@ article {
 
 .featured {
     background-color: $white;
+    text-align: center;
+
+    @include desktop() {
+        display: grid;
+        grid-template-areas: "h h h h"
+                             "i j k l";
+        grid-gap: 1em;
+        padding-bottom: 5%;
+    }
 
     h2 {
         color: $burn;
         font-family: $aleo;
+
+        @include desktop() {
+            font-size: 42px;
+        }
     }
 
     img {
@@ -269,6 +282,27 @@ article {
     }
 }
 
+.featured1 {
+    grid-area: h;
+}
+
+.featured2 {
+    grid-area: i;
+}
+
+.featured3 {
+    grid-area: j;
+}
+
+.featured3 {
+    grid-area: k;
+}
+
+.featured3 {
+    grid-area: l;
+}
+
+// Who we are section styling
 .who-are-we {
     font-family: $aleo;
     color: $burn;
@@ -356,13 +390,14 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 45vh;
+    height: 50vh;
 
     @include desktop {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-between;
         align-items: center;
+        height: 30vh;
     }
 
     a {
@@ -372,5 +407,10 @@ footer {
 
     a:hover {
         color: $white;
+    }
+
+    form {
+        display: inline-block;
+        justify-content: center;
     }
 }
