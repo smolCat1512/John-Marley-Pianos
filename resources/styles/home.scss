@@ -197,8 +197,8 @@ main {
     padding-top: 5%;
     padding-bottom: 5%;
 
-    h1 {
-        text-align: center;
+    @include desktop() {
+        font-size: 32px;
     }
 
     h2 {
@@ -207,31 +207,54 @@ main {
 
     p {
         text-align: center;
+
+        @include desktop() {
+            width: 80%;
+            margin-left: 10%;
+            text-align: left;
+        }
     }
 }
 
 article {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    border-top: 1px solid $burn;
     font-family: $aleo;
     width: 100%;
     background-color: $black;
     color: $burn;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    display: flex;
 
-    .article-left {
-        width: 50%;
+    @include desktop() {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
-    .article-right {
-        width: 50%;
+    img {
+        width: 100%;
+    }
 
-        img {
-            width: 100%;
-            height: 25vh;
+    h1 {
+        font-size: 28px;
+
+        @include desktop() {
+            font-size: 48px;
+        }
+    }
+
+    p {
+        font-size: 14px;
+
+        @include desktop() {
+            font-size: 24px;
         }
     }
 }
+
+
+
+
 
 .featured {
     background-color: $white;

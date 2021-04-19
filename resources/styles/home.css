@@ -183,8 +183,10 @@ main {
   padding-bottom: 5%;
 }
 
-main h1 {
-  text-align: center;
+@media (min-width: 1366px) {
+  main {
+    font-size: 32px;
+  }
 }
 
 main h2 {
@@ -195,29 +197,58 @@ main p {
   text-align: center;
 }
 
+@media (min-width: 1366px) {
+  main p {
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+  }
+}
+
 article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  text-align: center;
+  border-top: 1px solid #BC8635;
   font-family: "Aleo", serif;
   width: 100%;
   background-color: #000000;
   color: #BC8635;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-article .article-left {
-  width: 50%;
+@media (min-width: 1366px) {
+  article {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
 }
 
-article .article-right {
-  width: 50%;
-}
-
-article .article-right img {
+article img {
   width: 100%;
-  height: 25vh;
+}
+
+article h1 {
+  font-size: 28px;
+}
+
+@media (min-width: 1366px) {
+  article h1 {
+    font-size: 48px;
+  }
+}
+
+article p {
+  font-size: 14px;
+}
+
+@media (min-width: 1366px) {
+  article p {
+    font-size: 24px;
+  }
 }
 
 .featured {
