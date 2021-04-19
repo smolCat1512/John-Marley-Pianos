@@ -19,6 +19,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  background-color: #C4C4C4;
 }
 
 header h1 {
@@ -35,37 +36,41 @@ header .header-underline {
 }
 
 .home-video {
-  width: 100%;
-  height: 400px;
-  top: 0;
-  left: 0;
-  position: relative;
+  font-family: "Aleo", serif;
+  color: #000000;
 }
 
-.home-banner {
-  mix-blend-mode: darken;
-  opacity: 0.4;
-  top: 0;
-  left: 0;
+.home-video .video-text-1 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  text-align: center;
+  z-index: 1;
+}
+
+.home-video .video-text-2 {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  text-align: center;
+  z-index: 1;
+}
+
+.home-video video {
   width: 100%;
-  height: 50vh;
+  height: auto;
+  display: inline-block;
+  background-color: #000000;
+  opacity: 0.5;
 }
 
 .home-banner img {
   width: 100%;
-  z-index: -1;
-  height: 80%;
-}
-
-.home-banner h1:first-child {
-  position: absolute;
-  left: 15%;
-  color: #000000;
-}
-
-.home-banner h1:last-child {
-  position: absolute;
-  color: #000000;
+  height: auto;
+  mix-blend-mode: darken;
+  opacity: 0.4;
+  width: 100%;
+  height: 20%;
 }
 
 main {
@@ -223,7 +228,7 @@ footer {
   height: 45vh;
 }
 
-@media (max-width: 1366px) {
+@media (min-width: 1366px) {
   footer {
     display: -ms-grid;
     display: grid;
