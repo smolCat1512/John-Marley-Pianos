@@ -1,0 +1,191 @@
+// Font imports from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Aleo:wght@300;400&display=swap');
+
+// Font variables
+$abel: 'Abel',
+sans-serif;
+$aleo: 'Aleo',
+serif;
+
+// Colors
+$white: #ffff;
+$black: #000000;
+$burn: #BC8635;
+
+// Media queries and SCSS mixins, used for mobile and tablet
+// responsive design requirements
+$desktop: 1366px;
+$tablet: 768px;
+$mobile: 414px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+
+// Body styling to remove margins and padding
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// Header stylings
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+
+    @include tablet() {
+        justify-content: space-between;
+    }
+
+    @include desktop() {
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-left: 15px;
+        font-family: $abel;
+        font-size: 18px;
+
+        @include desktop() {
+            font-size: 36px;
+        }
+    }
+}
+
+.banner {
+
+    margin-top: -5px;
+
+    img {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        mix-blend-mode: darken;
+        opacity: 0.4;
+        width: 100%;
+        position: relative;
+        margin-top: -70px;
+
+        @include desktop {
+            margin-top: -90px;
+            height: 95vh;
+        }
+    }
+
+    font-family: $aleo;
+    color: $black;
+
+    .banner-1 {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+
+        @include desktop() {
+            left: 5%;
+            top: 30%;
+            font-size: 28px;
+        }
+    }
+
+    .banner-2 {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+
+        @include desktop() {
+            left: 5%;
+            top: 40%;
+            font-size: 28px;
+        }
+    }
+
+    .banner-3 {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+
+
+        @include desktop() {
+            left: 5%;
+            top: 50%;
+            font-size: 28px;
+        }
+    }
+
+    a {
+        position: absolute;
+        text-decoration: none;
+        top: 30%;
+        left: 70%;
+        border: 2px solid $burn;
+        border-radius: 5px;
+        background-color: $burn;
+        padding: 5px 10px;
+        color: $black;
+        font-family: $aleo;
+        color: $black;
+        z-index: 1;
+
+        @include desktop() {
+            top: 70%;
+            left: 80%;
+            font-size: 28px;
+        }
+    }
+}
+
+
+
+
+
+
+// Footer styling
+footer {
+    background-color: $black;
+    color: $burn;
+    font-family: $abel;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 50vh;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        height: 30vh;
+    }
+
+    a {
+        text-decoration: none;
+        color: $burn;
+    }
+
+    a:hover {
+        color: $white;
+    }
+
+    form {
+        display: inline-block;
+        justify-content: center;
+    }
+}

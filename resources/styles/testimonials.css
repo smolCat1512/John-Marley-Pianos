@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Aleo:wght@300;400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1366px) {
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header h1 {
+  margin-left: 15px;
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+}
+
+@media (min-width: 1366px) {
+  header h1 {
+    font-size: 36px;
+  }
+}
+
+.banner {
+  margin-top: -5px;
+  font-family: "Aleo", serif;
+  color: #000000;
+}
+
+.banner img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: darken;
+  opacity: 0.4;
+  width: 100%;
+  position: relative;
+  margin-top: -70px;
+}
+
+@media (min-width: 1366px) {
+  .banner img {
+    margin-top: -90px;
+    height: 95vh;
+  }
+}
+
+.banner .banner-1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+@media (min-width: 1366px) {
+  .banner .banner-1 {
+    left: 5%;
+    top: 30%;
+    font-size: 28px;
+  }
+}
+
+.banner .banner-2 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+@media (min-width: 1366px) {
+  .banner .banner-2 {
+    left: 5%;
+    top: 40%;
+    font-size: 28px;
+  }
+}
+
+.banner .banner-3 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+@media (min-width: 1366px) {
+  .banner .banner-3 {
+    left: 5%;
+    top: 50%;
+    font-size: 28px;
+  }
+}
+
+.banner a {
+  position: absolute;
+  text-decoration: none;
+  top: 30%;
+  left: 70%;
+  border: 2px solid #BC8635;
+  border-radius: 5px;
+  background-color: #BC8635;
+  padding: 5px 10px;
+  color: #000000;
+  font-family: "Aleo", serif;
+  color: #000000;
+  z-index: 1;
+}
+
+@media (min-width: 1366px) {
+  .banner a {
+    top: 70%;
+    left: 80%;
+    font-size: 28px;
+  }
+}
+
+footer {
+  background-color: #000000;
+  color: #BC8635;
+  font-family: "Abel", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  height: 50vh;
+}
+
+@media (min-width: 1366px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30vh;
+  }
+}
+
+footer a {
+  text-decoration: none;
+  color: #BC8635;
+}
+
+footer a:hover {
+  color: #ffff;
+}
+
+footer form {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=testimonials.css.map */
