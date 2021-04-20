@@ -463,4 +463,9 @@ footer form {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+footer .about {
+  padding-top: 40px;
+  background-color: #000000;
+}
 /*# sourceMappingURL=home.css.map */

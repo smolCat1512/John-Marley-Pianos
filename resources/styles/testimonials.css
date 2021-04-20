@@ -18,7 +18,7 @@ header {
   margin-left: 10%;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -46,13 +46,13 @@ header h1 {
   }
 }
 
-.banner {
+section {
   margin-top: -5px;
   font-family: "Aleo", serif;
   color: #000000;
 }
 
-.banner img {
+section img {
   display: inline-block;
   width: 100%;
   height: auto;
@@ -63,59 +63,66 @@ header h1 {
   margin-top: -70px;
 }
 
-@media (min-width: 1366px) {
-  .banner img {
+@media (min-width: 768px) {
+  section img {
     margin-top: -90px;
-    height: 95vh;
+    height: 80vh;
   }
 }
 
-.banner .banner-1 {
+@media (min-width: 1366px) {
+  section img {
+    margin-top: -90px;
+    height: 100vh;
+  }
+}
+
+section .banner-1 {
   position: absolute;
   top: 10%;
   left: 5%;
 }
 
 @media (min-width: 1366px) {
-  .banner .banner-1 {
+  section .banner-1 {
     left: 5%;
     top: 30%;
     font-size: 28px;
   }
 }
 
-.banner .banner-2 {
+section .banner-2 {
   position: absolute;
   top: 15%;
   left: 5%;
 }
 
 @media (min-width: 1366px) {
-  .banner .banner-2 {
+  section .banner-2 {
     left: 5%;
     top: 40%;
     font-size: 28px;
   }
 }
 
-.banner .banner-3 {
+section .banner-3 {
   position: absolute;
   top: 20%;
   left: 5%;
 }
 
 @media (min-width: 1366px) {
-  .banner .banner-3 {
+  section .banner-3 {
     left: 5%;
     top: 50%;
     font-size: 28px;
   }
 }
 
-.banner a {
+section a {
   position: absolute;
   text-decoration: none;
-  top: 30%;
+  top: 27.5%;
   left: 70%;
   border: 2px solid #BC8635;
   border-radius: 5px;
@@ -128,10 +135,65 @@ header h1 {
 }
 
 @media (min-width: 1366px) {
-  .banner a {
-    top: 70%;
+  section a {
+    top: 52.5%;
     left: 80%;
     font-size: 28px;
+  }
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-top: -22px;
+  grid-gap: 0;
+}
+
+@media (min-width: 1366px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+main p {
+  margin: 0;
+  padding: 15px;
+  font-family: "Aleo", serif;
+  color: #BC8635;
+  background-color: #000000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1366px) {
+  main p {
+    margin-bottom: 0px;
+    border-bottom: 2px solid #BC8635;
+    font-size: 28px;
+    text-align: right;
+    line-height: 2em;
+    word-spacing: .25em;
+  }
+}
+
+main img {
+  width: 100%;
+  margin-top: -20px;
+  border-bottom: 2px solid #BC8635;
+}
+
+@media (min-width: 1366px) {
+  main img {
+    margin-top: 0px;
+    width: 100%;
+    height: 700px;
   }
 }
 
@@ -160,7 +222,8 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 30vh;
+    height: 25vh;
+    padding-left: 5%;
   }
 }
 
@@ -178,5 +241,10 @@ footer form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+footer .about {
+  padding-top: 40px;
+  background-color: #000000;
 }
 /*# sourceMappingURL=testimonials.css.map */
