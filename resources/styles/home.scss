@@ -349,6 +349,8 @@ article {
     color: $burn;
     margin-bottom: 10px;
     color: #5b482b; // Different colour required as bad contrast using $burn
+    padding-top: 5%;
+    padding-bottom: 5%;
 
     display: grid;
     width: 100%;
@@ -430,7 +432,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 50vh;
+    height: 70vh;
 
     @include desktop {
         display: grid;

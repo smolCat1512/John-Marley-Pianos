@@ -249,14 +249,14 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 50vh;
+    height: 70vh;
 
     @include desktop {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-between;
         align-items: center;
-        height: 25vh;
+        height: 30vh;
         padding-left: 5%;
     }
 

@@ -354,6 +354,8 @@ article p {
   color: #BC8635;
   margin-bottom: 10px;
   color: #5b482b;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: -ms-grid;
   display: grid;
   width: 100%;
@@ -446,7 +448,7 @@ footer {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  height: 50vh;
+  height: 70vh;
 }
 
 @media (min-width: 1366px) {
