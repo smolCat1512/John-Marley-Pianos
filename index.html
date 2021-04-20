@@ -10,13 +10,21 @@
     <title>John Marley Pianos - Home</title>
 </head>
 
-<body>
+<body id="body">
 
     <header>
 
-        <a href="/">
+        <a class="openbtn" onclick="openNav()">
             <img src="/resources/images/Logo.jpeg" alt="logo">
         </a>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
 
         <a href="/">
             <h1>John Marley Pianos</h1>
@@ -179,6 +187,8 @@
         </div>
 
     </footer>
+
+    <script src="./javascript/sidebar.js"></script>
 
 </body>
 
