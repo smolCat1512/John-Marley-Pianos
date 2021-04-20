@@ -50,6 +50,7 @@ header {
     justify-content: center;
     width: 80%;
     margin-left: 10%;
+    z-index: 1;
 
     @include tablet() {
         justify-content: space-between;
@@ -67,6 +68,13 @@ header {
         @include desktop() {
             font-size: 36px;
         }
+    }
+
+    a {
+        cursor: pointer;
+        z-index: 1;
+        text-decoration: none;
+        color: $black;
     }
 }
 

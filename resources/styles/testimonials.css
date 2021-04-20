@@ -16,6 +16,7 @@ header {
           justify-content: center;
   width: 80%;
   margin-left: 10%;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -44,6 +45,13 @@ header h1 {
   header h1 {
     font-size: 36px;
   }
+}
+
+header a {
+  cursor: pointer;
+  z-index: 1;
+  text-decoration: none;
+  color: #000000;
 }
 
 section {
