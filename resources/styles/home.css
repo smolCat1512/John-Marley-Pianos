@@ -51,11 +51,12 @@ header h1 {
   color: #000000;
   margin-bottom: 0;
   padding: 0;
+  margin-top: -20%;
 }
 
 .home-video .video-text-1 {
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 15%;
   text-align: center;
   z-index: 1;
@@ -71,7 +72,7 @@ header h1 {
 
 .home-video .video-text-2 {
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 15%;
   text-align: center;
   z-index: 1;
@@ -99,6 +100,7 @@ header h1 {
 }
 
 .home-banner img {
+  margin-top: -1px;
   display: inline-block;
   width: 100%;
   height: auto;
@@ -110,7 +112,7 @@ header h1 {
 
 .home-banner .home-banner-1 {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 5%;
 }
 
@@ -124,7 +126,7 @@ header h1 {
 
 .home-banner .home-banner-2 {
   position: absolute;
-  top: 55%;
+  top: 45%;
   left: 5%;
 }
 
@@ -138,7 +140,7 @@ header h1 {
 
 .home-banner .home-banner-3 {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 5%;
 }
 
@@ -153,7 +155,7 @@ header h1 {
 .home-banner a {
   position: absolute;
   text-decoration: none;
-  top: 70%;
+  top: 60%;
   left: 70%;
   border: 2px solid #BC8635;
   border-radius: 5px;
@@ -305,6 +307,8 @@ article p {
   font-family: "Aleo", serif;
   color: #BC8635;
   background-color: #000000;
+  padding-bottom: 5%;
+  border-bottom: 2px solid #BC8635;
 }
 
 .who-are-we h2 {
@@ -314,6 +318,8 @@ article p {
 
 .who-are-we p {
   font-size: 16px;
+  font-weight: 300;
+  padding-right: 2%;
 }
 
 @media (min-width: 1366px) {
@@ -347,6 +353,7 @@ article p {
   font-family: "Aleo", serif;
   color: #BC8635;
   margin-bottom: 10px;
+  color: #5b482b;
   display: -ms-grid;
   display: grid;
   width: 100%;
@@ -370,11 +377,21 @@ article p {
   }
 }
 
+.why-choose-us h2 {
+  text-align: center;
+}
+
+.why-choose-us p {
+  font-weight: 300;
+  text-align: center;
+}
+
 .why-choose-us a {
-  border: 2px solid #BC8635;
+  border: 2px solid #5b482b;
   text-decoration: none;
   color: #BC8635;
   text-align: center;
+  color: #5b482b;
 }
 
 .a {

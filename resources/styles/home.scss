@@ -75,10 +75,11 @@ header {
     color: $black;
     margin-bottom: 0;
     padding: 0;
+    margin-top: -20%;
 
     .video-text-1 {
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: 15%;
         text-align: center;
         z-index: 1;
@@ -92,7 +93,7 @@ header {
 
     .video-text-2 {
         position: absolute;
-        top: 25%;
+        top: 15%;
         left: 15%;
         text-align: center;
         z-index: 1;
@@ -117,6 +118,7 @@ header {
     margin-top: -5px;
 
     img {
+        margin-top: -1px;
         display: inline-block;
         width: 100%;
         height: auto;
@@ -131,7 +133,7 @@ header {
 
     .home-banner-1 {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 5%;
 
         @include desktop() {
@@ -143,7 +145,7 @@ header {
 
     .home-banner-2 {
         position: absolute;
-        top: 55%;
+        top: 45%;
         left: 5%;
 
         @include desktop() {
@@ -155,7 +157,7 @@ header {
 
     .home-banner-3 {
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 5%;
 
 
@@ -169,7 +171,7 @@ header {
     a {
         position: absolute;
         text-decoration: none;
-        top: 70%;
+        top: 60%;
         left: 70%;
         border: 2px solid $burn;
         border-radius: 5px;
@@ -307,6 +309,8 @@ article {
     font-family: $aleo;
     color: $burn;
     background-color: $black;
+    padding-bottom: 5%;
+    border-bottom: 2px solid $burn;
 
     h2 {
         margin-left: 5%;
@@ -315,6 +319,8 @@ article {
 
     p {
         font-size: 16px;
+        font-weight: 300;
+        padding-right: 2%;
 
         @include desktop() {
             font-size: 24px;
@@ -342,6 +348,7 @@ article {
     font-family: $aleo;
     color: $burn;
     margin-bottom: 10px;
+    color: #5b482b; // Different colour required as bad contrast using $burn
 
     display: grid;
     width: 100%;
@@ -368,11 +375,21 @@ article {
             "g";
     }
 
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        font-weight: 300;
+        text-align: center;
+    }
+
     a {
-        border: 2px solid $burn;
+        border: 2px solid #5b482b;
         text-decoration: none;
         color: $burn;
         text-align: center;
+        color: #5b482b; // Different colour required as bad contrast using $burn
     }
 }
 
