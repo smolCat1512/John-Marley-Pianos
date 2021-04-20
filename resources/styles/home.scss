@@ -440,5 +440,13 @@ footer {
     .about {
         padding-top: 40px;
         background-color: $black;
+
+        a:first-child {
+            margin-left: 3%;
+        }
+
+        a {
+            margin-right: 3%;
+        }
     }
 }

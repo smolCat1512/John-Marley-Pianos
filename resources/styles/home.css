@@ -468,4 +468,12 @@ footer .about {
   padding-top: 40px;
   background-color: #000000;
 }
+
+footer .about a:first-child {
+  margin-left: 3%;
+}
+
+footer .about a {
+  margin-right: 3%;
+}
 /*# sourceMappingURL=home.css.map */

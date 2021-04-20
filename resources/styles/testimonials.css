@@ -180,6 +180,7 @@ main p {
     text-align: right;
     line-height: 2em;
     word-spacing: .25em;
+    padding-top: 10%;
   }
 }
 
@@ -194,6 +195,47 @@ main img {
     margin-top: 0px;
     width: 100%;
     height: 700px;
+  }
+}
+
+article {
+  font-family: "Aleo", serif;
+  color: #BC8635;
+  background-color: #000000;
+  text-align: center;
+  border-bottom: 2px solid #BC8635;
+}
+
+@media (min-width: 1366px) {
+  article {
+    text-align: left;
+  }
+}
+
+article h2 {
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-decoration: underline;
+}
+
+@media (min-width: 1366px) {
+  article h2 {
+    text-align: center;
+    font-size: 42px;
+  }
+}
+
+article p {
+  margin: 0;
+  padding-bottom: 5%;
+}
+
+@media (min-width: 1366px) {
+  article p {
+    font-size: 18px;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 
@@ -246,5 +288,13 @@ footer form {
 footer .about {
   padding-top: 40px;
   background-color: #000000;
+}
+
+footer .about a:first-child {
+  margin-left: 3%;
+}
+
+footer .about a {
+  margin-right: 3%;
 }
 /*# sourceMappingURL=testimonials.css.map */
