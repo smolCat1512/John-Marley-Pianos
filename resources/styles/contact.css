@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Aleo:wght@300;400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1366px) {
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header h1 {
+  margin-left: 15px;
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+}
+
+@media (min-width: 1366px) {
+  header h1 {
+    font-size: 36px;
+  }
+}
+
+header a {
+  cursor: pointer;
+  z-index: 1;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn:hover {
+  background-color: #ffff;
+}
+
+#body {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  /* If you want a transition effect */
+}
+
+@media (max-width: 414px) {
+  #body .sidebar {
+    padding-top: 20px;
+  }
+  #body .sidebar a {
+    font-size: 18px;
+  }
+}
+
+footer {
+  background-color: #000000;
+  color: #BC8635;
+  font-family: "Abel", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  height: 70vh;
+  border-top: 2px solid #BC8635;
+}
+
+@media (min-width: 1366px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30vh;
+  }
+}
+
+footer a {
+  text-decoration: none;
+  color: #BC8635;
+}
+
+footer a:hover {
+  color: #ffff;
+}
+
+footer form {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .about {
+  padding-top: 40px;
+  background-color: #000000;
+}
+
+footer .about a:first-child {
+  margin-left: 3%;
+}
+
+footer .about a {
+  margin-right: 3%;
+}
+/*# sourceMappingURL=contact.css.map */
