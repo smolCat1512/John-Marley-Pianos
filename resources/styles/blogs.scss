@@ -143,8 +143,101 @@ header {
     }
 }
 
+section {
+
+    font-family: $aleo;
+
+    img {
+        width: 100%;
+        z-index: -1;
+        margin-top: -20%;
+        mix-blend-mode: darken;
+        opacity: 0.3;
+        position: relative;
+
+    }
+
+    h2 {
+        position: absolute;
+        color: #5B3C0C;
+        top: 10%;
+
+        @include desktop() {
+            font-size: 48px;
+            top: 15%;
+            left: 40%;
+        }
+    }
+
+    p {
+        color: #5B3C0C;
+        position: absolute;
+        top: 20%;
+
+        @include desktop() {
+            font-size: 36px;
+            top: 40%;
+        }
+    }
+
+    form {
+        color: #5B3C0C;
+        top: 30%;
+        position: absolute;
+
+        @include desktop() {
+            font-size: 36px;
+            top: 60%;
+
+            input {
+                font-size: 36px;
+
+                .submitbutton {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
 
 
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    background-color: $black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: $abel;
+    margin-top: -5px;
+    border-top: 2px solid $burn;
+
+    @include desktop() {
+        font-size: 36px;
+        line-height: 150%;
+        word-spacing: 15%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        margin: 0;
+        color: $burn;
+    }
+
+    a {
+        margin-left: 2px;
+        color: red;
+
+        @include desktop() {
+            margin-left: 5%;
+        }
+    }
+}
 
 
 
@@ -158,6 +251,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 70vh;
+    border-top: 2px solid $burn;
 
     @include desktop {
         display: grid;

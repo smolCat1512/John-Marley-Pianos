@@ -121,6 +121,109 @@ header a {
   }
 }
 
+section {
+  font-family: "Aleo", serif;
+}
+
+section img {
+  width: 100%;
+  z-index: -1;
+  margin-top: -20%;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  position: relative;
+}
+
+section h2 {
+  position: absolute;
+  color: #5B3C0C;
+  top: 10%;
+}
+
+@media (min-width: 1366px) {
+  section h2 {
+    font-size: 48px;
+    top: 15%;
+    left: 40%;
+  }
+}
+
+section p {
+  color: #5B3C0C;
+  position: absolute;
+  top: 20%;
+}
+
+@media (min-width: 1366px) {
+  section p {
+    font-size: 36px;
+    top: 40%;
+  }
+}
+
+section form {
+  color: #5B3C0C;
+  top: 30%;
+  position: absolute;
+}
+
+@media (min-width: 1366px) {
+  section form {
+    font-size: 36px;
+    top: 60%;
+  }
+  section form input {
+    font-size: 36px;
+  }
+  section form input .submitbutton {
+    font-size: 36px;
+  }
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 20px;
+  background-color: #000000;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Abel", sans-serif;
+  margin-top: -5px;
+  border-top: 2px solid #BC8635;
+}
+
+@media (min-width: 1366px) {
+  main {
+    font-size: 36px;
+    line-height: 150%;
+    word-spacing: 15%;
+  }
+}
+
+main img {
+  width: 100%;
+}
+
+main p {
+  margin: 0;
+  color: #BC8635;
+}
+
+main a {
+  margin-left: 2px;
+  color: red;
+}
+
+@media (min-width: 1366px) {
+  main a {
+    margin-left: 5%;
+  }
+}
+
 footer {
   background-color: #000000;
   color: #BC8635;
@@ -132,6 +235,7 @@ footer {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   height: 70vh;
+  border-top: 2px solid #BC8635;
 }
 
 @media (min-width: 1366px) {

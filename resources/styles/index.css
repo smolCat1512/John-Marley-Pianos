@@ -170,6 +170,7 @@ header a {
 }
 
 .home-banner {
+  margin-top: -5px;
   font-family: "Aleo", serif;
   color: #000000;
 }
