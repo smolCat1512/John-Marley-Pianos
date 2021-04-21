@@ -520,6 +520,10 @@ footer {
         height: 30vh;
     }
 
+    @include mobile() {
+        text-align: center;
+    }
+
     a {
         text-decoration: none;
         color: $burn;

@@ -543,6 +543,12 @@ footer {
   }
 }
 
+@media (max-width: 414px) {
+  footer {
+    text-align: center;
+  }
+}
+
 footer a {
   text-decoration: none;
   color: #BC8635;

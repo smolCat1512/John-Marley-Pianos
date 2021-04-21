@@ -177,12 +177,14 @@ section {
         @include desktop() {
             font-size: 36px;
             top: 40%;
+            left: 10%;
         }
     }
 
     form {
         color: #5B3C0C;
         top: 30%;
+        left: 10%;
         position: absolute;
 
         @include desktop() {
@@ -259,6 +261,10 @@ footer {
         justify-content: space-between;
         align-items: center;
         height: 30vh;
+    }
+
+    @include mobile() {
+        text-align: center;
     }
 
     a {

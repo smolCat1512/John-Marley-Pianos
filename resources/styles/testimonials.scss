@@ -319,6 +319,10 @@ footer {
         padding-left: 5%;
     }
 
+    @include mobile() {
+        text-align: center;
+    }
+
     a {
         text-decoration: none;
         color: $burn;

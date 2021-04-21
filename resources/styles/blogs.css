@@ -158,12 +158,14 @@ section p {
   section p {
     font-size: 36px;
     top: 40%;
+    left: 10%;
   }
 }
 
 section form {
   color: #5B3C0C;
   top: 30%;
+  left: 10%;
   position: absolute;
 }
 
@@ -251,6 +253,12 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     height: 30vh;
+  }
+}
+
+@media (max-width: 414px) {
+  footer {
+    text-align: center;
   }
 }
 
