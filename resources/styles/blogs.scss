@@ -1,0 +1,196 @@
+// Font imports from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Aleo:wght@300;400&display=swap');
+
+// Font variables
+$abel: 'Abel',
+sans-serif;
+$aleo: 'Aleo',
+serif;
+
+// Colors
+$white: #ffff;
+$black: #000000;
+$burn: #BC8635;
+
+// Media queries and SCSS mixins, used for mobile and tablet
+// responsive design requirements
+$desktop: 1366px;
+$tablet: 768px;
+$mobile: 414px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+
+// Body styling to remove margins and padding
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// Header stylings
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    z-index: 1;
+
+    @include tablet() {
+        justify-content: space-between;
+    }
+
+    @include desktop() {
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-left: 15px;
+        font-family: $abel;
+        font-size: 18px;
+
+        @include desktop() {
+            font-size: 36px;
+        }
+    }
+
+    a {
+        cursor: pointer;
+        z-index: 1;
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn:hover {
+    background-color: $white;
+}
+
+#body {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
+
+    @include mobile() {
+        .sidebar {
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+
+
+
+
+// Footer styling
+footer {
+    background-color: $black;
+    color: $burn;
+    font-family: $abel;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 70vh;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        height: 30vh;
+    }
+
+    a {
+        text-decoration: none;
+        color: $burn;
+    }
+
+    a:hover {
+        color: $white;
+    }
+
+    form {
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .about {
+        padding-top: 40px;
+        background-color: $black;
+
+        a:first-child {
+            margin-left: 3%;
+        }
+
+        a {
+            margin-right: 3%;
+        }
+    }
+}
