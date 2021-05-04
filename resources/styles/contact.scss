@@ -171,8 +171,13 @@ header {
     margin-left: 50px;
 }
 
+.material-icons.md-48 {
+    font-size: 48px;
+    color: #f1f1f1;
+}
+
 .openbtn:hover {
-    background-color: $white;
+    background-color: $black;
 }
 
 #body {

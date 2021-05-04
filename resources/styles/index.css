@@ -133,6 +133,10 @@ header a {
   margin-left: 50px;
 }
 
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
 .openbtn:hover {
   background-color: #ffff;
 }
@@ -157,7 +161,7 @@ header a {
   color: #000000;
   margin-bottom: 0;
   padding: 0;
-  margin-top: -20%;
+  margin-top: -27%;
   z-index: -1;
 }
 
@@ -219,7 +223,7 @@ header a {
 
 .home-banner .home-banner-1 {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 5%;
 }
 
@@ -233,7 +237,7 @@ header a {
 
 .home-banner .home-banner-2 {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 5%;
 }
 
@@ -247,7 +251,7 @@ header a {
 
 .home-banner .home-banner-3 {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 5%;
 }
 
@@ -262,7 +266,7 @@ header a {
 .home-banner a {
   position: absolute;
   text-decoration: none;
-  top: 60%;
+  top: 53%;
   left: 70%;
   border: 2px solid #BC8635;
   border-radius: 5px;

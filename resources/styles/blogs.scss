@@ -163,6 +163,10 @@ header {
     margin-left: 50px;
 }
 
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
 .openbtn:hover {
     background-color: $white;
 }
@@ -189,7 +193,7 @@ section {
     img {
         width: 100%;
         z-index: -1;
-        margin-top: -20%;
+        margin-top: -30%;
         mix-blend-mode: darken;
         opacity: 0.3;
         position: relative;
